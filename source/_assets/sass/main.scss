@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+
+// Tooltip styles
+@import "~balloon-css/src/balloon";
+
+:root {
+--balloon-color: #627D98;
+}
+
+// Custom styles
+html {
+    scroll-behavior: smooth;
+}
+
+.spaced-y-6 > * {
+    margin-bottom: 1.5rem;
+}
+
+@tailwind utilities;
