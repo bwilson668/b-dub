@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="{{ $page->meta_description ?? $page->siteDescription }}">
 
@@ -32,7 +32,7 @@
             <main>@yield('body')</main>    
         </div>
 
-        <footer class="mt-24 md:ml-24 md:pl-4 lg:ml-32 lg:pl-8 lg:w-2/3 xl:w-2/5 text-blue-grey-400 font-sm">
+        <footer class="mt-24 md:ml-28 lg:ml-40 lg:w-2/3 xl:w-2/5 text-blue-grey-400 font-sm">
             <p>&copy; {{ Date('Y') }}, Mr. Ben</p>
         </footer>
 

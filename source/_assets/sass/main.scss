@@ -9,8 +9,10 @@
 }
 
 // Custom styles
-html {
+html, body {
     scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .spaced-y-6 > * {
