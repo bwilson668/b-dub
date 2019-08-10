@@ -1,4 +1,4 @@
-<header class="mb-4 md:mb-8">
+<header class="mb-8 md:mb-16">
     <div class="flex justify-between items-center md:items-end">
         <img src="https://assets.benjaminandrewwilson.com/bw-square.jpg" alt="Ben Wilson - That's me!" class="block h-10 md:h-24 lg:h-32 rounded-lg shadow-inner md:mr-4 lg:mr-8">
         <div class="md:flex-1">

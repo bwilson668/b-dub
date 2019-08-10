@@ -17,12 +17,16 @@ pagination:
 <div class="md:ml-24 md:pl-4 lg:ml-32 lg:pl-8 lg:w-2/3 xl:w-2/5">
     <h1 class="text-2xl font-medium text-blue-grey-900 mb-4 font-sans">Models</h1>
 
+    <div class="text-lg text-grey-800 leading-normal spaced-y-6">
+        <p>This is where the rubber meets the road. The concepts we discuss are put into practice to answer questions about your business, and hopefully spur better ones. 🙂</p>
+    </div>
+
     @foreach ($pagination->items as $post)
         @include('_components.post-preview-inline')
 
-        @if ($post != $pagination->items->last())
+        {{-- @if ($post != $pagination->items->last())
             <hr class="border-b my-6">
-        @endif
+        @endif --}}
     @endforeach
 
     @if ($pagination->pages->count() > 1)
