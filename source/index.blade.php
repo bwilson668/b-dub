@@ -26,18 +26,6 @@
             Still too much too soon? That's 😎too. <br>
             Take a look around my site. I hope it helps!
         </p>
-        <p>
-            <a href="#articles" class="text-blue-grey-700 hover:text-blue-grey-500 font-bold">Articles</a>
-            dive into the details of business strategy and analytics.
-        </p>
-        <p>
-            <a href="#units" class="text-blue-grey-700 hover:text-blue-grey-500 font-bold">Units</a>
-            set the foundation for conversation. If you get your team on the same page here, you can build incredible abilities on top of it.
-        </p>
-        <p>
-            <a href="#models" class="text-blue-grey-700 hover:text-blue-grey-500 font-bold">Models</a>
-            is just another word for fancy calculator. Plug-in your own numbers to see what you are capable of.
-        </p>
         {{-- <p>If you're crunched for time or want to keep up with the latest, sign up for my newsletter.</p> --}}
         {{-- ConvertKit sign-up form --}}
     </div>

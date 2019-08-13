@@ -8,25 +8,15 @@
 @endpush
 
 @section('body')
+<div class="md:ml-24 md:pl-4 lg:ml-32 lg:pl-8 lg:w-2/3 xl:w-2/5">
     @if ($page->cover_image)
         <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2 rounded-lg">
     @endif
 
-    <h1 class="leading-none mb-2">{{ $page->title }}</h1>
+    <h1 class="text-lg md:text-2xl font-bold text-blue-grey-900 mt-0">{{ $page->title }}</h1>
+    <p class="text-xs text-grey-600 mb-4">{{ date('F j, Y', $page->date) }}</p>
 
-    <p class="text-blue-100 text-xl md:mt-0">{{ $page->author }}  •  {{ date('F j, Y', $page->date) }}</p>
-
-    @if ($page->categories)
-        @foreach ($page->categories as $i => $category)
-            <a
-                href="{{ '/blog/categories/' . $category }}"
-                title="View posts in {{ $category }}"
-                class="inline-block bg-grey-light hover:bg-blue-800 leading-loose tracking-wide text-grey-darkest uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
-            >{{ $category }}</a>
-        @endforeach
-    @endif
-
-    <div class="border-b border-blue-800 mb-10 pb-4">
+    <div class="text-grey-800 leading-normal spaced-y-6">
         @yield('content')
     </div>
 
@@ -47,4 +37,5 @@
             @endif
         </div>
     </nav>
+</div>
 @endsection
