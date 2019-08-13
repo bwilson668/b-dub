@@ -5,6 +5,7 @@ title: Booking to Billing
 date: 2019-07-30
 description: Build the bridge between Sales and Finance/Ops.
 cover: https://assets.benjaminandrewwilson.com/closed.jpg
+featured: true
 ---
 
 <test></test>

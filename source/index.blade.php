@@ -42,17 +42,41 @@
         {{-- ConvertKit sign-up form --}}
     </div>
     <div id="articles" class="my-24">
-        <h2 class="text-2xl font-medium text-blue-grey-900 mb-4 font-sans">Articles</h2>
+        <h2 class="text-2xl font-display text-blue-800 mb-4 tracking-wide">Articles</h2>
+        <div class="text-lg text-grey-800 leading-normal spaced-y-6">
+            <p>Articles give us a chance to deeper into the details of business strategy and analytics.</p>
+        </div>
+        @foreach ($articles as $post)
+            @if($post->featured)
+                @include('_components.post-preview-inline')
+            @endif
+        @endforeach
         <a href="/articles" class="text-blue-grey-700 hover:text-blue-grey-500 font-bold">Check out all the articles &nbsp;<i class="fal fa-arrow-right fa-xs"></i></a>
     </div>
     <div id="units" class="my-24">
-        <h2 class="text-2xl font-medium text-blue-grey-900 mb-4 font-sans">Units</h2>
+        <h2 class="text-2xl font-display text-blue-800 mb-4 tracking-wide">Units</h2>
+        <div class="text-lg text-grey-800 leading-normal spaced-y-6">
+            <p>Have you ever been in a conversation where it feels like you are talking right past each other? This is a problem of different units.</p>
+            <p>This section is meant to set the foundation for conversation. Get your team on the same page and you'll be shocked how fast you can move.</p>
+        </div>
+        @foreach ($units as $post)
+            @if($post->featured)
+                @include('_components.post-preview-inline')
+            @endif
+        @endforeach
         <a href="/units" class="text-blue-grey-700 hover:text-blue-grey-500 font-bold">Review all the units &nbsp;<i class="fal fa-arrow-right fa-xs"></i></a>
     </div>
     <div id="models" class="my-24">
-        <h2 class="text-2xl font-medium text-blue-grey-900 mb-4 font-sans">Models</h2>
+        <h2 class="text-2xl font-display text-blue-800 mb-4 tracking-wide">Models</h2>
+        <div class="text-lg text-grey-800 leading-normal spaced-y-6">
+            <p>This is where the rubber meets the road. The concepts we discuss are put into practice to answer questions about your business, and hopefully spur new impactful ones!</p>
+        </div>
+        @foreach ($models as $post)
+            @if($post->featured)
+                @include('_components.post-preview-inline')
+            @endif
+        @endforeach
         <a href="/models" class="text-blue-grey-700 hover:text-blue-grey-500 font-bold">Explore all the models &nbsp;<i class="fal fa-arrow-right fa-xs"></i></a>
     </div>
-    {{-- <test></test> --}}
 </div>
 @endsection

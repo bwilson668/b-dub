@@ -2,9 +2,9 @@
     <div class="flex justify-between items-center md:items-end">
         <img src="https://assets.benjaminandrewwilson.com/bw-square.jpg" alt="Ben Wilson - That's me!" class="block h-10 md:h-24 lg:h-32 rounded-lg shadow-inner md:mr-4 lg:mr-8">
         <div class="md:flex-1">
-            <a href="/" class="font-display text-2xl lg:text-4xl text-blue-900">Ben Wilson</a>
+            <a href="/" class="font-display font-extrabold text-2xl lg:text-4xl text-blue-900">Ben Wilson</a>
             <nav class="hidden md:flex">
-                    @include('_nav.menu')
+                @include('_nav.menu')
             </nav>
         </div>
         

@@ -12,6 +12,8 @@
         <meta property="og:description" content="{{ $page->siteDescription }}" />
         
         <link rel="home" href="{{ $page->baseUrl }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="icon" href="/favicon.ico">
         <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
 
@@ -25,7 +27,7 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
         <script src="https://kit.fontawesome.com/7074b97e46.js"></script>
     </head>
-    <body class="bg-blue-grey-050 border-t-8 border-blue-900 py-8 lg:py-16 px-6 md:px-16 lg:px-24">
+    <body class="bg-blue-grey-050 border-t-8 border-yellow-400 py-8 lg:py-16 px-6 md:px-16 lg:px-24">
         <div id="container">
             @include('_partials.header')
     
