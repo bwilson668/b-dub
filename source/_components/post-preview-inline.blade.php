@@ -1,6 +1,6 @@
 <div class="flex items-start my-8">
     @if ($post->cover != NULL)
-        <img src="https://assets.benjaminandrewwilson.com/closed.jpg" alt="" class="-mr-4 h-16 md:h-32 rounded-lg shadow-xl z-10">
+        <img src="{{ $post->cover }}" alt="" class="-mr-4 h-16 md:h-32 rounded-lg shadow-xl z-10">
     @endif
 
     <div class="mt-4 px-8 py-4 w-full rounded-lg bg-blue-grey-100 border-t-8 border-yellow-400 shadow">
