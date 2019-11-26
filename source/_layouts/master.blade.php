@@ -27,15 +27,18 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
         <script src="https://kit.fontawesome.com/7074b97e46.js"></script>
     </head>
-    <body class="bg-blue-grey-050 border-t-8 border-yellow-400 py-8 lg:py-16 px-6 md:px-16 lg:px-24">
+    <body class="font-sans text-white text-lg h-full bg-bw-dark flex flex-col">
         <div id="container">
             @include('_partials.header')
-    
-            <main>@yield('body')</main>    
+            <main class="container pt-32 mx-auto relative">
+                @yield('body')
+            </main>    
         </div>
 
-        <footer class="mt-24 md:ml-28 lg:ml-40 lg:w-2/3 xl:w-2/5 text-blue-grey-400 font-sm">
-            <p>&copy; {{ Date('Y') }}, Mr. Ben</p>
+        <span class="flex-1"></span>
+
+        <footer class="w-full pb-8 pt-64 mt-16 mx-auto text-center text-sm sunset">
+            <p class="text-bw-dark">&copy; {{ Date('Y') }}, Mister Ben</p>
         </footer>
 
         <script src="{{ mix('js/main.js', 'assets/build') }}"></script>

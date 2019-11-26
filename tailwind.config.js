@@ -39,6 +39,11 @@ module.exports = {
       },
       colors: // Palette 15
       {
+        // Brand
+        "bw-dark": "#1a202c",
+        "bw-dark-transparent": "rgba(26, 32, 44, 0.75)",
+        "bw-light-transparent": "rgba(255, 255, 255,.06)",
+
         // Primary
         "blue-050": "#DCEEFB",
         "blue-100": "#B6E0FE",
@@ -52,17 +57,6 @@ module.exports = {
         "blue-900": "#003E6B",  
       
         // Neutrals
-        "blue-grey-050": "#F0F4F8",
-        "blue-grey-100": "#D9E2EC",
-        "blue-grey-200": "#BCCCDC",
-        "blue-grey-300": "#9FB3C8",
-        "blue-grey-400": "#829AB1",
-        "blue-grey-500": "#627D98",
-        "blue-grey-600": "#486581",
-        "blue-grey-700": "#334E68",
-        "blue-grey-800": "#243B53",
-        "blue-grey-900": "#102A43", 
-        
         "blue-gray-050": "#F0F4F8",
         "blue-gray-100": "#D9E2EC",
         "blue-gray-200": "#BCCCDC",
@@ -153,6 +147,8 @@ module.exports = {
       },
     }
   },
-  variants: {},
+  variants: {
+    borderWidth: ['responsive', 'hover', 'focus'],
+  },
   plugins: []
 }

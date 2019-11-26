@@ -12,11 +12,71 @@
 html, body {
     scroll-behavior: smooth;
     max-width: 100%;
-    overflow-x: hidden;
+    height:100%
+}
+
+.top-16 {
+    top: 4rem;
+}
+
+.blurable {
+    backdrop-filter: blur(10px);
+}
+
+.fade-yellow {
+    background: linear-gradient(90deg, rgba(247,208,112,1) 33%, rgba(26,32,44,0.5) 100%);
+}
+
+.sunset {
+    background: linear-gradient(180deg, rgba(26,32,44,1) 0%, rgba(45,55,72,1) 33%, rgba(124,94,16,1) 66%, rgba(162,124,26,1) 100%)
 }
 
 .spaced-y-6 > * {
     margin-bottom: 1.5rem;
+}
+
+.content {
+    @apply mt-8 text-grey-400 leading-normal
+
+    & h1 {
+        @apply text-white text-3xl font-bold
+    }
+
+    & h2 {
+        @apply text-white text-3xl
+    }
+
+    & h3 {
+        @apply text-white text-2xl font-bold
+    }
+
+    & h4 {
+        @apply text-white text-2xl
+    }
+
+    & h5 {
+        @apply text-white text-xl font-bold
+    }
+
+    & h6 {
+        @apply text-white text-xl
+    }
+
+    & a {
+        @apply text-yellow-400 border-b border-yellow-400;
+
+        &:hover {
+            @apply border-b-2 border-yellow-500 text-yellow-500;
+        }
+    }
+
+    & > pre {
+        @apply bg-bw-light-transparent p-4 overflow-x-auto;
+    }
+
+    & blockquote {
+        @apply italic my-4
+    }
 }
 
 @tailwind utilities;

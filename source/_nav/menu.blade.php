@@ -1,3 +1,3 @@
-<a href="/articles" class="my-2 md:mb-0 md:mt-2 md:mr-4 uppercase text-blue-grey-500 hover:text-blue-grey-900">Articles</a>
-<a href="/units" class="my-2 md:mb-0 md:mt-2 md:mx-4 uppercase text-blue-grey-500 hover:text-blue-grey-900">Units</a>
-<a href="/models" class="my-2 md:mb-0 md:mt-2 md:mx-4 uppercase text-blue-grey-500 hover:text-blue-grey-900">Models</a>
+<a href="/articles" class="flex mt-8 md:mt-0 md:ml-8 md:text-sm border-b-2 border-transparent hover:border-gray-100">Articles</a>
+<a href="/units" class="mt-4 md:mt-0 md:ml-8 md:text-sm border-b-2 border-transparent hover:border-gray-100">Units</a>
+<a href="/models" class="mt-4 md:mt-0 md:ml-8 md:text-sm border-b-2 border-transparent hover:border-gray-100">Models</a>
