@@ -11,11 +11,11 @@
 <div class="md:w-3/4 lg:w-2/3 mx-auto">
     <h1 class="text-lg md:text-3xl font-bold">{{ $page->title }}</h1>
 
-    <div class="content">
+    <div class="content spaced-y-6">
         @yield('content')
     </div>
 
-    <nav class="flex justify-between text-sm md:text-base">
+    <nav class="flex justify-between text-sm md:text-base mt-16">
         <div>
             @if ($next = $page->getNext())
                 <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}">

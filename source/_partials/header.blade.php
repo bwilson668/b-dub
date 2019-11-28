@@ -1,4 +1,4 @@
-<header class="fixed top-0 h-16 w-full z-10 bg-bw-dark-transparent blurable">
+<header class="fixed top-0 h-16 w-full z-10 px-4 bg-bw-dark-transparent blurable">
     <nav id="nav" class="container mx-auto my-4">
         <div class="flex justify-between items-center">
             {{-- <img src="https://assets.benjaminandrewwilson.com/bw-square.jpg" alt="Ben Wilson - That's me!" class="block h-10 md:h-24 lg:h-32 rounded-lg shadow-inner md:mr-4 lg:mr-8"> --}}
@@ -13,7 +13,7 @@
             </button>
         </div>
     
-        <div class="flex flex-col h-screen md:hidden" v-show="navDisplay">
+        <div class="flex flex-col h-screen md:hidden -mx-4 px-4 bg-bw-dark-transparent blurable" v-show="navDisplay">
             @include('_nav.menu')
         </div>
     </nav>

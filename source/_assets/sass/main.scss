@@ -32,50 +32,72 @@ html, body {
 }
 
 .spaced-y-6 > * {
-    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .content {
-    @apply mt-8 text-grey-400 leading-normal
+    @apply mt-8 text-grey-400 leading-normal;
 
     & h1 {
-        @apply text-white text-3xl font-bold
+        @apply text-white text-3xl font-bold;
     }
 
     & h2 {
-        @apply text-white text-3xl
+        @apply text-white text-3xl;
     }
 
     & h3 {
-        @apply text-white text-2xl font-bold
+        @apply text-white text-2xl font-bold;
     }
 
     & h4 {
-        @apply text-white text-2xl
+        @apply text-white text-2xl;
     }
 
     & h5 {
-        @apply text-white text-xl font-bold
+        @apply text-white text-xl font-bold;
     }
 
     & h6 {
-        @apply text-white text-xl
+        @apply text-white text-xl;
     }
 
     & a {
         @apply text-yellow-400 border-b border-yellow-400;
+    }
 
-        &:hover {
-            @apply border-b-2 border-yellow-500 text-yellow-500;
-        }
+    & a:hover {
+        @apply border-b-2 text-yellow-500;
+        margin-bottom: 1.5rem;
     }
 
     & > pre {
-        @apply bg-bw-light-transparent p-4 overflow-x-auto;
+        @apply bg-bw-light-transparent p-4 overflow-x-auto border-l border-yellow-400 text-sm font-mono;
     }
 
     & blockquote {
-        @apply italic my-4
+        @apply italic overflow-auto bg-bw-light-transparent border-t border-b border-yellow-400 p-4 pt-0 mx-12;
+
+        & *:not(first-child) {
+            @apply mt-4;
+        }
+    }
+
+    & ul {
+        @apply list-disc ml-12;
+    }
+    
+    & ol {
+        @apply list-decimal ml-12;
+    }
+
+    & *:not(pre) > code {
+        @apply bg-bw-light-transparent p-1 font-mono;
+    }
+
+    & hr {
+        @apply h-1 border-none mx-12;
+        background: linear-gradient(90deg, rgba(247,208,112,1) 33%, rgba(26,32,44,0.5) 100%);
     }
 }
 
