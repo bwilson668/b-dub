@@ -1,8 +1,8 @@
 <header class="fixed top-0 h-16 w-full z-10 px-4 bg-bw-dark-transparent blurable">
     <nav id="nav" class="container mx-auto my-4">
-        <div class="flex justify-between items-center">
+        <div class="flex justify-between items-center md:w-3/4 lg:w-2/3 mx-auto">
             {{-- <img src="https://assets.benjaminandrewwilson.com/bw-square.jpg" alt="Ben Wilson - That's me!" class="block h-10 md:h-24 lg:h-32 rounded-lg shadow-inner md:mr-4 lg:mr-8"> --}}
-            <a href="/" class="font-display tracking-widest text-2xl lg:text-4xl">Ben Wilson</a>
+            <a href="/" class="font-display tracking-widest text-2xl">Ben Wilson</a>
             <div class="hidden md:flex">
                 @include('_nav.menu')
             </div>

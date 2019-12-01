@@ -18,6 +18,11 @@ return [
             'sort' => '-date',
             'path' => 'models/{filename}',
         ],
+        'references' => [
+            'author' => 'Ben Wilson', // Default author, if not provided in frontmatter
+            'sort' => '-date',
+            'path' => 'references/{filename}',
+        ],
         'units' => [
             'author' => 'Ben Wilson', // Default author, if not provided in frontmatter
             'sort' => '-date',
