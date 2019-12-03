@@ -51,4 +51,13 @@ return [
             ? preg_replace('/\s+?(\S+)?$/', '', $truncated) . '...'
             : $cleaned;
     },
+    'getTags' => function ($page) {
+        return [
+            'references' => [
+                'saas',
+                'neural networks',
+                'model metrics'
+            ],
+        ];
+    },
 ];

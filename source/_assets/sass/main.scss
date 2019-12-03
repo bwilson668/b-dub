@@ -27,6 +27,14 @@ html, body {
     background: linear-gradient(90deg, rgba(247,208,112,1) 33%, rgba(26,32,44,0.5) 100%);
 }
 
+.fade-grey {
+    background: linear-gradient(90deg, rgba(74,85,104,1) 33%, rgba(26,32,44,0.5) 100%);
+}
+
+.fade-grey-reverse {
+    background: linear-gradient(270deg, rgba(74,85,104,1) 33%, rgba(26,32,44,0) 80%);
+}
+
 .sunset {
     background: linear-gradient(180deg, rgba(26,32,44,1) 0%, rgba(45,55,72,1) 33%, rgba(124,94,16,1) 66%, rgba(162,124,26,1) 100%)
 }
