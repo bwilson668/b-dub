@@ -54,9 +54,15 @@ return [
     'getTags' => function ($page) {
         return [
             'references' => [
-                'saas',
-                'neural networks',
-                'model metrics'
+                'ML Fundamentals',
+                // 'Model Understanding',
+                // 'Regression',
+                // 'Classification',
+                // 'Neural Networks',
+                // 'Clustering',
+                // 'Bayesian',
+                // 'NLP',
+                // 'Miscellaneous',
             ],
         ];
     },

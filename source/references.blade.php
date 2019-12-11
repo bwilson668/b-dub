@@ -18,17 +18,20 @@
         <p>While this material is more complex than a phone number, there are a significant number of terms, concepts, and helpful shortcuts to remember. This is meant to be the raw materials that goes into all higher level work.</p>
     </div>
 
+    
     @foreach ($page->getTags()['references'] as $tag)
-        <div class="sticky top-16 fade-grey-reverse px-4 py-1 mt-8">
-            <h3 class="text-2xl text-right font-display tracking-wide">{{ $tag }}</h3>
+        <div>
+            <div class="sticky top-16 fade-grey-reverse px-4 py-1 mt-8">
+                <h3 class="text-2xl text-right font-display tracking-wide">{{ $tag }}</h3>
+            </div>
+            <section class="md:flex md:flex-wrap mt-8">
+                @foreach ($references as $post)
+                    @if(in_array($tag, $post->tags))
+                        @include('_components.post-preview-inline')
+                    @endif
+                @endforeach
+            </section>
         </div>
-        <section class="md:flex md:flex-wrap mt-8">
-            @foreach ($references as $post)
-                @if(in_array($tag, $post->tags))
-                    @include('_components.post-preview-inline')
-                @endif
-            @endforeach
-        </section>
     @endforeach
 </div>
 @endsection

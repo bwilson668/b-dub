@@ -19,7 +19,7 @@
 
     <div id="reference" class="mt-24">
         <div class="sticky top-16 fade-yellow px-4 py-1 text-gray-800">
-            <h2 class="text-2xl font-display tracking-wide">References</h2>
+            <h2 class="text-xl md:text-2xl font-display tracking-wide">References</h2>
         </div>
         <div class="px-4 mt-8 text-lg leading-normal spaced-y-6">
             <p>A friend told me an amusing little story about Albert Einstein. It went like, Einstein was at a dinner party and a collegues asked him for his number. Einstein found a phone book and looked up his name. "You don't remeber your own number?" the colleague asked.</p>
@@ -27,24 +27,26 @@
             <p>While this material is more complex than a phone number, there are a significant number of terms, concepts, and helpful shortcuts to remember. This is meant to be the raw materials that goes into all higher level work.</p>
         </div>
         @foreach ($page->getTags()['references'] as $tag)
-            <div class="sticky top-16 fade-grey-reverse px-4 py-1 mt-8">
-                <h3 class="text-2xl text-right font-display tracking-wide">{{ $tag }}</h3>
+            <div>
+                <div class="sticky top-16 fade-grey-reverse px-4 py-1 mt-8">
+                    <h3 class="text-xl md:text-2xl text-right font-display tracking-wide">{{ $tag }}</h3>
+                </div>
+                <section class="md:flex md:flex-wrap mt-8">
+                    @foreach ($references as $post)
+                        @if(in_array($tag, $post->tags))
+                            @include('_components.post-preview-inline')
+                        @endif
+                    @endforeach
+                </section>
             </div>
-            <section class="md:flex md:flex-wrap mt-8">
-                @foreach ($references as $post)
-                    @if(in_array($tag, $post->tags))
-                        @include('_components.post-preview-inline')
-                    @endif
-                @endforeach
-            </section>
         @endforeach
         
-        <a href="/articles" class="text-blue-grey-700 hover:text-blue-grey-500 font-bold float-right mx-4">See all the references &nbsp;<i class="fal fa-arrow-right fa-xs"></i></a>
+        <a href="/references" class="text-blue-grey-700 hover:text-blue-grey-500 font-bold float-right mx-4">See all the references &nbsp;<i class="fal fa-arrow-right fa-xs"></i></a>
     </div>
 
-    <div id="articles" class="mt-24">
+    {{-- <div id="articles" class="mt-24">
         <div class="sticky top-16 fade-yellow px-4 py-1 text-gray-800">
-            <h2 class="text-2xl font-display tracking-wide">Articles</h2>
+            <h2 class="text-xl md:text-2xl font-display tracking-wide">Articles</h2>
         </div>
         <div class="px-4 mt-8 text-lg leading-normal">
             <p>Articles give us a chance to deeper into the details of business strategy and analytics.</p>
@@ -61,7 +63,7 @@
 
     <div id="units" class="mt-24">
         <div class="sticky top-16 fade-yellow px-4 py-1 text-gray-800">
-            <h2 class="text-2xl font-display tracking-wide">Units</h2>
+            <h2 class="text-xl md:text-2xl font-display tracking-wide">Units</h2>
         </div>
         <div class="px-4 mt-8 text-lg leading-normal spaced-y-6">
             <p>Have you ever been in a conversation where it feels like you are talking right past each other? This is a problem of different units.</p>
@@ -80,7 +82,7 @@
 
     <div id="models" class="mt-24">
         <div class="sticky top-16 fade-yellow px-4 py-1 text-gray-800">
-            <h2 class="text-2xl font-display tracking-wide">Models</h2>
+            <h2 class="text-xl md:text-2xl font-display tracking-wide">Models</h2>
         </div>
         <div class="px-4 mt-8 text-lg leading-normal spaced-y-6">
             <p>This is where the rubber meets the road. The concepts we discuss are put into practice to answer questions about your business, and hopefully spur new impactful ones!</p>
@@ -93,6 +95,6 @@
             @endforeach
         </section>
         <a href="/models" class="text-blue-grey-700 hover:text-blue-grey-500 font-bold float-right mx-4">Explore all the models &nbsp;<i class="fal fa-arrow-right fa-xs"></i></a>
-    </div>
+    </div> --}}
 </div>
 @endsection
